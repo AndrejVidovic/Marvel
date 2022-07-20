@@ -1,0 +1,16 @@
+.search{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    height: 2.5rem;
+}
+.search .fa-search{
+    padding-left: 15px;
+    padding-right: 5px;
+}
+#search_box{
+    border: none;
+    outline: none;
+    width: 100%;
+}

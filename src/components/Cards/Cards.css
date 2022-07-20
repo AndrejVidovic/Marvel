@@ -1,0 +1,73 @@
+.card{
+    display: flex;
+    margin: 20px;
+    height:310px;
+    border-radius: 10px;
+    flex-direction: column;   
+}
+.card_inner {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card_inner:hover  {
+    transform: rotateY(180deg);
+}
+.card_front, .card_back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 2px -2px 5px 3px #55a0d3
+}
+.card_back {
+    background-color: #518cca;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+.character_image{
+    display: contents
+}
+.character_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.character_name{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Anton', sans-serif;
+    padding-top: 1rem;
+}
+.character_star{
+    padding-top: 1rem;
+}
+.character_description{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 14px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1rem;
+}
+.character_description::-webkit-scrollbar{
+    display: none;
+}
+.fa-star{
+    color: #e23636;
+    font-weight: bold;
+    font-size: 55px;
+}
+.fa-star-o{
+    font-weight: bold;
+    font-size: 55px;
+}
+
