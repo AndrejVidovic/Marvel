@@ -25,8 +25,7 @@ function App() {
           headers: { 'Content-Type': 'application/json'},
       };
       if (search) {
-       console.log("a jebote")
-       let res=await fetch(`https://gateway.marvel.com/v1/public/characters?nameStartsWith=${search}&ts=${ts}&apikey=${pubkey}&hash=${hash}`,fetchOptions);
+        let res=await fetch(`https://gateway.marvel.com/v1/public/characters?nameStartsWith=${search}&ts=${ts}&apikey=${pubkey}&hash=${hash}`,fetchOptions);
         let data=await res.json();
         setItems(data.data.results);
       }
