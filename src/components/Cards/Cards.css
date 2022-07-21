@@ -4,16 +4,16 @@
     height:310px;
     border-radius: 10px;
     flex-direction: column;   
+    display: block;
 }
 .card_inner {
-    display: block;
     position:relative;
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition:0.8s;
     transform-style: preserve-3d;
-    -webkit-transition: transform 0.8s;
+    -webkit-transition:0.8s;
     -webkit-transform-style: preserve-3d;
 }
 .card_inner:hover  {
