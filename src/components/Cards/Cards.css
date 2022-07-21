@@ -32,6 +32,7 @@
 .card_back {
     background-color: #518cca;
     transform: rotateY(180deg);
+    -webkit-transform: rotate3d(0,180deg,0);
     display: flex;
     flex-direction: column;
     overflow: hidden;
