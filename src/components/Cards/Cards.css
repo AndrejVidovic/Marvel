@@ -1,27 +1,27 @@
-.card{
-    display: flex;
-    margin: 20px;
-    height:310px;
-    border-radius: 10px;
-    flex-direction: column;   
+.card {
+    height: 300px;
     display: block;
+    perspective: 1000px;
 }
+
 .card_inner {
-    position:relative;
+    position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
-    transition:0.8s;
+    transition: transform 0.8s;
     transform-style: preserve-3d;
-    -webkit-transition:0.8s;
+    -webkit-transition: transform 0.8s;
     -webkit-transform-style: preserve-3d;
 }
-.card_inner:hover  {
+
+.card:hover .card_inner {
     transform: rotateY(180deg);
-    -webkit-transform: rotate3d(0,180deg,0)
+    -webkit-transform: rotateY(180deg);
 }
-.card_front, .card_back {
-    position: fixed;
+
+.card_front,
+.card_back {
+    position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
@@ -29,50 +29,56 @@
     border-radius: 10px;
     box-shadow: 2px -2px 5px 3px #55a0d3
 }
+
 .card_back {
     background-color: #518cca;
     transform: rotateY(180deg);
-    -webkit-transform: rotate3d(0,180deg,0);
+    -webkit-transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     position: relative;
 }
-.character_image{
+
+.character_image {
     display: contents
 }
-.character_image img{
+
+.character_image img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
-.character_name{
+
+.character_name {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
     font-family: 'Anton', sans-serif;
     padding-top: 1rem;
 }
-.character_star{
+
+.character_star {
     padding-top: 1rem;
 }
-.character_description{
+
+.character_description {
     font-family: 'Otomanopee One', sans-serif;
     font-size: 14px;
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 1rem;
 }
-.character_description::-webkit-scrollbar{
+
+.character_description::-webkit-scrollbar {
     display: none;
 }
-.fa-star{
+
+.fa-star {
     color: #e23636;
     font-weight: bold;
     font-size: 55px;
 }
-.fa-star-o{
+
+.fa-star-o {
     font-weight: bold;
     font-size: 55px;
 }
-
