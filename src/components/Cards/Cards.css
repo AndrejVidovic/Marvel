@@ -15,6 +15,7 @@
 }
 .card_inner:hover  {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 .card_front, .card_back {
     position: fixed;

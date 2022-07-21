@@ -29,9 +29,6 @@
     width: 400px;
 }
 @media (min-width:600px) and (max-width:768px) {
-    .navbar_logo img{
-        width:6rem
-    }
     .navbar_title{
         display: none;
     }
@@ -41,9 +38,6 @@
     }
 }
 @media(max-width:600px) {
-    .navbar_logo img{
-        width:6rem
-    }
     .navbar_title{
         display: none;
     }
